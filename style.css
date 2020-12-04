@@ -1,0 +1,11 @@
+body
+{
+	background-color: lightblue;
+}
+.container{float:left;}
+.container{margin-left:200px;} /* this gives space for the label on the left */
+.container .clear{clear:both;}
+.detail{float:left;}
+.detail{margin-right: 100px;}
+.detail{clear: both;}
+h1{text-align: center;}

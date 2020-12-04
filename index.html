@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAFETY EQUIPMENTS</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jscript.js">
+	</script>
+</head>
+<body>
+	<h1>Sristy Covid Equipments</h1>
+	<div class="container">
+	<form action="action.html">
+	<div class="detail">
+	First name:
+	<input type="text" name="firstname" pattern="[A-Za-z].{2,}" required><br><br>
+	Last name:
+	<input type="text" name="Lastname" pattern="[A-Za-z].{2,}"><br><br>
+	User Address:<br>
+	<textarea name="address" style="width:250px; height:150px;" pattern=".{10,}" required></textarea><br><br>
+	Phone Number:
+	<input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required><br><br>
+	PIN Code:
+	<input type="tel" name="pin" placeholder="123456" pattern="[0-9]{6}" required><br><br>
+	<label for="psw">Password</label>
+  <input type="password" id="psw" name="psw" onblur="CheckPassword()" required><br><br>
+	<strong>Order the Equipments to Fight Covid</strong><br></div>
+	<table>
+		<tr>
+     <td><label for="equip1">Mask</label></td><td> <input type="number" id="quantity1" name="quantity1" min="0" max="50" value="0"> Quantity (&#8377;80 per unit)<br></td>
+     <td><img src="face-mask.jpg"></td>
+      </tr><tr>
+      <td><label for="equip2">PPE Kit</label></td><td> <input type="number" id="quantity2" name="quantity2" min="0" max="20" value="0"> Quantity (&#8377;600 per unit)<br></td>
+      <td><img src="PPE-suit.jpg"></td>
+      </tr><tr>
+       <td><label for="equip3">Sanitizer</label></td><td> <input type="number" id="quantity3" name="quantity3" min="0" max="30" value="0"> Quantity (&#8377;150 per unit)<br></td><td><img src="sanitizer.jpg" width="50%" height="50%"></td>
+      </tr><tr>
+     <td><label for="equip1">Gloves</label></td><td> <input type="number" id="quantity4" name="quantity4" min="0" max="50" value="0"> Quantity (&#8377;50 per unit)<br></td><td><img src="disposable-gloves.jpg"></td>
+      </tr><tr>
+     <td><label for="equip1">Face Shield</label></td><td> <input type="number" id="quantity5" name="quantity5" min="0" max="50" value="0"> Quantity (&#8377;80 per unit)<br></td><td><img src="face-shields.jpg"></td>
+      </tr><tr>
+      	<td></td><td><button onclick="myFunction()">Order it</button></td>
+      </tr>
+</table>
+	</form>
+</div>
+
+
+</body>
+</html>
